@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/309422036e.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>My YouTube List</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+            <i class="fab fa-youtube text-danger"></i>My<span class="text-danger">YouTube</span>List
+        </h1>
+        <form id="video-form">
+            <div class="form-group text-white">
+                <label for="videoname">Video Name:</label>
+                <input type="text" class="form-control" id="videoname">
+            </div>
+            <div class="form-group text-white">
+                <label for="author">Author:</label>
+                <input type="text" class="form-control" id="author">
+            </div>
+            <div class="form-group text-white">
+                <label for="url"><em>URL</em>:</label>
+                <input type="text" class="form-control" id="url">
+            </div>
+            <input type="submit" value="Add Video" class="btn btn-primary btn-block">
+        </form>
+        <table class="table table-striped mt-5 text-center">
+            <thead>
+                <tr>
+                    <th>Video Name</th>
+                    <th>Author</th>
+                    <th><em>URL</em></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="video-list"></tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
